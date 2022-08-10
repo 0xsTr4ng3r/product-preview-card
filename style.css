@@ -12,10 +12,13 @@ body{
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
 }
-.cover img{
+.cover .m-img{
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0px 0px;
+}
+.cover .d-img{
+    display: none;
 }
 p{
     font-size: 14px;
@@ -68,4 +71,31 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media only screen and (min-width: 700px) {
+    .card{
+        max-width: 600px;
+        display: flex;
+    }
+    .cover,.desc{
+        width: 50%;
+    }
+    .m-img,.d-img{
+        display: none;
+    }
+    .cover {
+        height:480px;
+        width: 50%;
+        border-radius: 7px 0px 0px 7px;
+        background-image: url("images/image-product-desktop.jpg");
+        background-position: center;
+        background-size: 400px;
+        background-repeat: no-repeat;
+    }
+    .price{
+        margin: 25px 0px;
+    }
+    .p-name{
+        margin: 15px 0px;
+    }
 }
